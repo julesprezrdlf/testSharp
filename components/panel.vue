@@ -1,16 +1,16 @@
 <template>
   <div containerPanel>
-    <h1 class="text-blue-600">Edit Member</h1>
+    <h1 class="title text-3xl font-semibold	my-9	">Edit Member</h1>
 
     <!-- Navigation Bar -->
-    <div class="navbarPanel flex flex-row space-x-8 text-base">
-      <div class="elementInactive"><h2>Profile</h2></div>
-      <div class="elementInactive"><h2>Access</h2></div>
-      <div class="elementInactive"><h2>Permissions</h2></div>
-      <div class="elementInactive"><h2>Notifications</h2></div>
-      <div class="elementActive underline"><h2>Billing</h2></div>
+    <div class="navbarPanel flex flex-row space-x-8 text-base ">
+      <div class="elementInactive"><a>Profile</a></div>
+      <div class="elementInactive"><a>Access</a></div>
+      <div class="elementInactive"><a>Permissions</a></div>
+      <div class="elementInactive"><a>Notifications</a></div>
+      <div class="elementActive underline"><a>Billing</a></div>
     </div>
-
+<hr class="my-4"/>
     <!-- Properties -->
 
     <div class="propertiesPanel flex flex-row rounded-lg place-content-around text-xs p-3">
@@ -24,12 +24,14 @@
       </div>
       <div>
         <div>Payment Method</div>
-        <visaIcon/><div class="mainTextPanel text-lg">****5564</div><penIcon/>
+        <div class="flex flex-row" ><visaIcon/><div class="mainTextPanel text-lg">****5564</div><penIcon/></div>
+        
       </div>
       <div>
         <div>Properties</div>
         <div class="mainTextPanel text-lg">6/10</div>
       </div>
+      
     </div>
 
     <!-- Invoice List  -->
@@ -49,10 +51,18 @@ export default {
 </script>
 
 <style>
+.title{
+    color: #0A0B0F;
+}
 
-.elementInactive h2 {
+.elementInactive a {
   font-weight: 500;
   color: #666666;
+  cursor: pointer;
+}
+
+.elementInactive a:hover {
+  color: #212121;
 }
 
 .elementActive {
