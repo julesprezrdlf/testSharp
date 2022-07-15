@@ -48,12 +48,29 @@ export default {
         ;
         
       
-    }
+    },
     // ,                           MANTENER COMENTADO
     // setResults(results){        MANTENER COMENTADO
     //     this.output=results;    MANTENER COMENTADO
     // }                           MANTENER COMENTADO
+    prueba(){
+    console.log("holaaaa");
+    },
+fetchJson: function () {
+      
+          fetch("https://julesprezrdlf.github.io/testSharp/invoices.json")
+          .then(res=>{
+            return res.json();
+          }).then(this.setResults);
+      
+    },
+    setResults(results){
+      this.output = results;
+    },
+
   },
+
+    
 
 //   fetchJson: function () {
       
@@ -69,7 +86,8 @@ export default {
 
   beforeMount() {
     this.getJson();
-    // this.fetchJson();
+    this.prueba();
+    this.fetchJson();
   },
 };
 </script>
