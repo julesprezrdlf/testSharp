@@ -19,6 +19,9 @@
     </div>
 
     {{ jsonData }}
+   <p>hola</p>
+    {{output}}
+
   </div>
 </template>
 
@@ -28,21 +31,45 @@ export default {
   data() {
     return {
       jsonData: invoices,
+      output:{}
     };
   },
   methods: {
+
     getJson: function () {
-      // fetch("https://api.themoviedb.org/3/movie/550?api_key=9d5bbddde93fb73ec32279ed6f8795c3")
-      fetch("../static/invoices")
+      fetch("https://julesprezrdlf.github.io/testSharp/invoices.json")
+    //   fetch("../static/invoices") MANTENER COMENTADO
         .then((response) => response.json())
         .then((data) => {
+            console.log("esto es data")
           console.log(data);
-        });
-      alert("hola");
-    },
+        })
+        // .then(this.setResults) MANTENER COMENTADO
+        ;
+        
+      
+    }
+    // ,                           MANTENER COMENTADO
+    // setResults(results){        MANTENER COMENTADO
+    //     this.output=results;    MANTENER COMENTADO
+    // }                           MANTENER COMENTADO
   },
+
+//   fetchJson: function () {
+      
+//           fetch("https://julesprezrdlf.github.io/testSharp/invoices.json")
+//           .then(res=>{
+//             return res.json();
+//           }).then(this.setResults);
+      
+//     },
+//     setResults(results){
+//       this.output = results;
+//     },
+
   beforeMount() {
     this.getJson();
+    // this.fetchJson();
   },
 };
 </script>
