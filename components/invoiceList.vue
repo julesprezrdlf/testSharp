@@ -18,8 +18,11 @@
         >
           <h1>UNPAID</h1>
         </div>
+        <div><p>${{item.total}}</p></div>
       </div>
+
       <p class="mb-2 font-normal text-xs">Invoice #{{ item.number }}</p>
+
       <hr />
     </div>
   </div>
@@ -74,4 +77,6 @@ hr {
   color: #e4e4e4;
   max-width: 600px;
 }
+
+
 </style>

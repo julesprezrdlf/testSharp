@@ -48,6 +48,7 @@ export default {
 </script>
 
 <style>
+
 .elementInactive h2 {
   font-weight: 500;
   color: #666666;
@@ -61,7 +62,11 @@ export default {
 .propertiesPanel{
     background-color: #F3F4F6;
     max-width: 600px;
+
 }
 
 
 </style>
+
+
+
