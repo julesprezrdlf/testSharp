@@ -22,7 +22,6 @@
       <p class="mb-2 font-normal text-xs">Invoice #{{ item.number }}</p>
       <hr />
     </div>
-
   </div>
 </template>
 
@@ -34,18 +33,6 @@ export default {
     };
   },
   methods: {
-    getJson: function () {
-      fetch("https://julesprezrdlf.github.io/testSharp/invoices.json")
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("esto es data");
-          console.log(data);
-        });
-    },
-
-    prueba() {
-      console.log("holaaaa");
-    },
     fetchJson: function () {
       fetch("https://julesprezrdlf.github.io/testSharp/invoices.json")
         .then((res) => {
@@ -59,8 +46,6 @@ export default {
   },
 
   beforeMount() {
-    this.getJson();
-    this.prueba();
     this.fetchJson();
   },
 };
@@ -70,8 +55,8 @@ export default {
 .unpaid {
   background-color: #f4541d;
   color: #fff;
+  padding: 2.5px;
 
-  padding: 2px, 6px, 2px, 6px;
   width: 59px;
   height: 20px;
 }
@@ -80,7 +65,7 @@ export default {
   background-color: #4caf50;
   color: #fff;
 
-  padding: 2px, 6px, 2px, 6px;
+  padding: 2.5px;
   width: 59px;
   height: 20px;
 }
