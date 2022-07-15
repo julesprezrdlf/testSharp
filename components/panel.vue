@@ -24,7 +24,7 @@
       </div>
       <div>
         <div>Payment Method</div>
-        <div class="mainTextPanel text-lg">****5564</div>
+        <visaIcon/><div class="mainTextPanel text-lg">****5564</div><penIcon/>
       </div>
       <div>
         <div>Properties</div>
@@ -42,8 +42,9 @@
 
 <script>
 import InvoiceList from "./invoiceList.vue";
+import VisaIcon from './visaIcon.vue';
 export default {
-  components: { InvoiceList },
+  components: { InvoiceList, VisaIcon },
 };
 </script>
 

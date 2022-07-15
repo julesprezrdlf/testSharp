@@ -19,6 +19,7 @@
           <h1>UNPAID</h1>
         </div>
         <div><p>${{item.total}}</p></div>
+        <DownloadIcon/>
       </div>
 
       <p class="mb-2 font-normal text-xs">Invoice #{{ item.number }}</p>
