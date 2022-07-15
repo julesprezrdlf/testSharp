@@ -13,22 +13,22 @@
 
     <!-- Properties -->
 
-    <div class="propertiesPanel flex flex-row rounded-lg place-content-around">
+    <div class="propertiesPanel flex flex-row rounded-lg place-content-around text-xs p-3">
       <div>
         <div>Billing type</div>
-        <div>Yearly</div>
+        <div class="mainTextPanel text-lg"><p>Yearly</p></div>
       </div>
       <div>
         <div>Next Invoice</div>
-        <div>9/6/2041</div>
+        <div class="mainTextPanel text-lg">9/6/2041</div>
       </div>
       <div>
         <div>Payment Method</div>
-        <div>****5564</div>
+        <div class="mainTextPanel text-lg">****5564</div>
       </div>
       <div>
         <div>Properties</div>
-        <div>6/10</div>
+        <div class="mainTextPanel text-lg">6/10</div>
       </div>
     </div>
 
@@ -49,21 +49,19 @@ export default {
 
 <style>
 .elementInactive h2 {
-  /* font-size: 16px; */
   font-weight: 500;
   color: #666666;
 }
 
 .elementActive {
-  /* font-size: 16px; */
   font-weight: 500;
   color: #304ffe;
 }
 
 .propertiesPanel{
-    background-color: #E7E9EC;
+    background-color: #F3F4F6;
     max-width: 600px;
-    opacity: 0.5;
 }
+
 
 </style>
