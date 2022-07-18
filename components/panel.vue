@@ -1,6 +1,6 @@
 <template>
   <div containerPanel>
-    <h1 class="title text-3xl font-semibold	my-9	">Edit Member</h1>
+    <h1 class="title text-3xl font-semibold	mb-9	">Edit Member</h1>
 
     <!-- Navigation Bar -->
     <div class="navbarPanel flex flex-row space-x-8 text-base ">
@@ -13,7 +13,7 @@
 <hr class="my-4"/>
     <!-- Properties -->
 
-    <div class="propertiesPanel flex flex-row rounded-lg place-content-around text-xs p-3">
+    <div class="propertiesPanel flex flex-row rounded-lg place-content-around text-xs p-3 ">
       <div>
         <div>Billing type</div>
         <div class="mainTextPanel text-lg"><p>Yearly</p></div>
@@ -38,15 +38,17 @@
     <InvoiceList />
 
     <!-- Buttons -->
-
+<div class="buttonArea">
+    <buttonArea/>
+</div>
   </div>
 </template>
 
 <script>
-import InvoiceList from "./invoiceList.vue";
-import VisaIcon from './visaIcon.vue';
+
+
 export default {
-  components: { InvoiceList, VisaIcon },
+  components: { },
 };
 </script>
 
@@ -75,6 +77,7 @@ export default {
     max-width: 600px;
 
 }
+
 
 
 </style>

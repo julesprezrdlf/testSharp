@@ -14,6 +14,6 @@ export default {
 
 <style scoped>
 .download-svg{
-    margin-left:100px;
+    margin-left:150px;
 }
 </style>

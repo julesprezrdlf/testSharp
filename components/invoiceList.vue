@@ -88,7 +88,11 @@ hr {
   max-width: 600px;
 }
 
+.containerInvoice{
+max-width: 600px;
+}
+
 .rightInvoice{
-    margin-left:20px;
+    margin-left:80px;
 }
 </style>

@@ -1,26 +1,27 @@
+<!-- Crafted by Jvl3s Perez -->
+
+
 <template>
   <div class ="container">
 <div class ="leftSide">
-<!-- <Sidebar/> -->
+<Sidebar/>
 </div>
 <div class ="rightSide">
 <Panel/>
-<!-- {{jsonData}} -->
+
 </div>
   </div>
 </template>
 
 <script>
 
-import Panel from "../components/panel.vue";
-import Sidebar from "~/components/sidebar.vue";
 
 export default {
-  components: { Panel, Sidebar },
+  components: {  },
   name: 'IndexPage',
   data () {
     return {
-      // jsonData: invoices
+
     }
   },
 }
