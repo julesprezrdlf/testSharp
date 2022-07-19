@@ -107,5 +107,13 @@ hr {
     position: relative;
     margin-top: 54px;
     left: 5%;
-  }}
+  }
+  
+  .rightInvoice{
+    margin-left: -1px;
+  }
+  
+  }
+
+  
 </style>
