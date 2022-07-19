@@ -5,7 +5,7 @@
       <h1 class="title text-3xl font-semibold mb-9 mt-10">Edit Member</h1>
 
       <!-- Navigation Bar -->
-      <div class="navbarPanel flex flex-row  text-base space-x-6 ">
+      <div class="navbarPanel flex flex-row text-base space-x-6">
         <div class="elementInactive"><a>Profile</a></div>
         <div class="elementInactive"><a>Access</a></div>
         <div class="elementInactive"><a>Permissions</a></div>
@@ -16,27 +16,27 @@
       <!-- Properties -->
 
       <div
-        class="propertiesPanel flex flex-row rounded-lg place-content-around text-xs p-3"
+        class="propertiesPanel flex flex-row rounded-lg place-content-around p-3"
       >
         <div>
-          <div>Billing type</div>
-          <div class="mainTextPanel text-lg"><p>Yearly</p></div>
+          <div class="head1">Billing type</div>
+          <div class="mainTextPanel"><p>Yearly</p></div>
         </div>
         <div>
-          <div>Next Invoice</div>
-          <div class="mainTextPanel text-lg">9/6/2041</div>
+          <div class="head1">Next Invoice</div>
+          <div class="mainTextPanel ">9/6/2041</div>
         </div>
         <div>
-          <div>Payment Method</div>
+          <div class="head1">Payment Method</div>
           <div class="flex flex-row">
             <visaIcon />
-            <div class="mainTextPanel text-lg ml-2 mr-4">****5564</div>
+            <div class="mainTextPanel visacard ml-2 mr-4">****5564</div>
             <penIcon />
           </div>
         </div>
         <div>
-          <div>Properties</div>
-          <div class="mainTextPanel text-lg">6/10</div>
+          <div class="head1">Properties</div>
+          <div class="mainTextPanel">6/10</div>
         </div>
       </div>
 
@@ -108,25 +108,29 @@ export default {
     left: 5%;
   }
 
-  .propertiesPanel{
-    max-width: 500px;
+  .propertiesPanel {
+    max-width: 360px;
+    margin-left: -10px;
   }
 
-  .navbarPanel{
-font-size: 10px;
+  .head1 {
+    font-size: 12px;
+    font-weight: 600;
   }
-  
-
-  .elementInactive{
-    
+  .mainTextPanel {
     font-size: 12px;
   }
 
-  .elementActive{
-    
-    
+  .visacard{
+    margin-top:1px;
+  }
+
+  .elementInactive {
     font-size: 12px;
- 
+  }
+
+  .elementActive {
+    font-size: 12px;
   }
 }
 

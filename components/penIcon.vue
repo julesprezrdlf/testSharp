@@ -26,10 +26,13 @@ export default {
 </script>
 
 <style scoped>
-.penIcon {
-  display: block;
-  margin: auto;
-  margin-top: 22px;
+.pen-svg {
+
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .pen-svg {
+    transform: scale(0.7);
+  }}
 </style>
