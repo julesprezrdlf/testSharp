@@ -23,10 +23,10 @@ export default {
   top: 2%
 }
 
-@media (max-width: 900px) { 
+@media (max-width: 1100px) { 
   .containerCrossed{
 
-  left: 90%;
+  left: 95%;
  
 }
 }

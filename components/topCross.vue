@@ -13,6 +13,6 @@ export default {
 <style>
 .containerCruz{
 
-
+cursor: pointer;
 }
 </style>

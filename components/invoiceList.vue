@@ -93,4 +93,19 @@ hr {
 .rightInvoice {
   margin-left: 80px;
 }
+
+@media (max-width: 640px) {
+  .mainPanel {
+    position: relative;
+    margin-top: 54px;
+    left: 1%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainPanel {
+    position: relative;
+    margin-top: 54px;
+    left: 5%;
+  }}
 </style>

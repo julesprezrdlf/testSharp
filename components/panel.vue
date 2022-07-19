@@ -5,7 +5,7 @@
       <h1 class="title text-3xl font-semibold mb-9 mt-10">Edit Member</h1>
 
       <!-- Navigation Bar -->
-      <div class="navbarPanel flex flex-row space-x-8 text-base">
+      <div class="navbarPanel flex flex-row  text-base space-x-6 ">
         <div class="elementInactive"><a>Profile</a></div>
         <div class="elementInactive"><a>Access</a></div>
         <div class="elementInactive"><a>Permissions</a></div>
@@ -93,7 +93,7 @@ export default {
   left: 20%;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 640px) {
   .mainPanel {
     position: relative;
     margin-top: 54px;
@@ -106,6 +106,35 @@ export default {
     position: relative;
     margin-top: 54px;
     left: 5%;
+  }
+
+  .propertiesPanel{
+    max-width: 500px;
+  }
+
+  .navbarPanel{
+font-size: 10px;
+  }
+  
+
+  .elementInactive{
+    
+    font-size: 12px;
+  }
+
+  .elementActive{
+    
+    
+    font-size: 12px;
+ 
+  }
+}
+
+@media (max-width: 1100px) {
+  .mainPanel {
+    position: relative;
+    margin-top: 54px;
+    left: 12%;
   }
 }
 </style>
