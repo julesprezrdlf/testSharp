@@ -83,7 +83,7 @@ export default {
     
 }
 h1{
-    color: white;
+    /* color: white; */
 }
 /* Smartphones (portrait) ----------- */
 /* @media only screen and (max-width: 620px) {

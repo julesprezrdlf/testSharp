@@ -4,9 +4,9 @@
 <template>
   <div class ="container">
 <div class ="leftSide">
-<Sidebar/>
+<!-- <Sidebar/> -->
 </div>
-<div class ="rightSide">
+<div class ="rightSide grid place-items-center">
 <Panel/>
 
 </div>

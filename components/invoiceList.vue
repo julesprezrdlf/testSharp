@@ -82,7 +82,8 @@ export default {
 }
 
 hr {
-  color: #e4e4e4;
+  /* color: #e4e4e4; */
+  color: black;
   max-width: 600px;
 }
 

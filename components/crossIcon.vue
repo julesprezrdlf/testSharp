@@ -1,5 +1,5 @@
 <template>
-  <div class="containerCrossed place-content-end">
+  <div class="containerCrossed flex justify-end">
     
     <svg
       class="cross-svg"
@@ -26,7 +26,7 @@ export default {
 @media (max-width: 1100px) { 
   .containerCrossed{
 
-  left: 95%;
+  /* left: 95%; */
  
 }
 }
