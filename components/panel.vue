@@ -19,24 +19,24 @@
         class="propertiesPanel flex flex-row rounded-lg place-content-around p-3"
       >
         <div>
-          <div class="head1">Billing type </div>
-          <div class="mainTextPanel"><p>Yearly</p></div>
+          <div class="head1 text-xs sm:text-sm text-gray-600">Billing type </div>
+          <div class="mainTextPanel font-normal sm:font-bold"><p>Yearly</p></div>
         </div>
         <div>
-          <div class="head1">Next Invoice</div>
-          <div class="mainTextPanel ">9/6/2041</div>
+          <div class="head1 text-xs sm:text-sm text-gray-600">Next Invoice</div>
+          <div class="mainTextPanel font-normal sm:font-bold ">9/6/2041</div>
         </div>
         <div>
-          <div class="head1">Payment Method</div>
+          <div class="head1 text-xs sm:text-sm text-gray-600">Payment Method</div>
           <div class="flex flex-row">
             <visaIcon />
-            <div class="mainTextPanel visacard ml-2 mr-0 sm:mr-4">****5564</div>
+            <div class="mainTextPanel visacard ml-2 mr-0 sm:mr-4 font-normal sm:font-bold">****5564</div>
             <penIcon />
           </div>
         </div>
         <div>
-          <div class="head1">Properties</div>
-          <div class="mainTextPanel">6/10</div>
+          <div class="head1 text-xs sm:text-sm text-gray-600">Properties</div>
+          <div class="mainTextPanel font-normal sm:font-bold">6/10</div>
         </div>
       </div>
 
@@ -92,20 +92,13 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .mainPanel {
- 
-  }
+
   .propertiesPanel {
     max-width: 360px;
     margin-left: -10px;
   }
-  .head1 {
-    font-size: 11px;
-    font-weight: 600;
-  }
-  .mainTextPanel {
-    /* font-size: 12px; */
-  }
+
+ 
   .visacard{
     margin-top:1px;
   }
