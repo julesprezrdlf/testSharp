@@ -4,8 +4,8 @@
     <hr />
     <div v-for="item in output" :key="item.id">
       <div class="billContainer mt-3 flex flex-row grid grid-cols-2">
-        <div class="leftInvoice flex flex-row">
-          <p>{{ item.date }}</p>
+        <div class="leftInvoice  flex flex-row">
+          <p class="text-xs sm:text-lg">{{ item.date }}</p>
           <div
             class="paid text-center text-xs font-semibold rounded-md align-middle ml-4 mt-1"
             v-if="item.paid"
@@ -14,18 +14,19 @@
           </div>
 
           <div
-            class="unpaid text-center text-xs font-semibold rounded-md align-middle ml-4 mt-1"
+            class="unpaid text-center text-xs font-semibold rounded-md align-middle ml-5 mt-1"
             v-if="item.paid === false"
           >
             <h1>UNPAID</h1>
           </div>
         </div>
 
-        <div class="rightInvoice flex flex-row">
+        <div class="rightInvoice flex flex-row ml-0 sm:ml-12">
           <div>
-            <p>${{ item.total }}</p>
+            <p class="text-base sm:text-lg">${{ item.total }}</p>
           </div>
-          <DownloadIcon />
+          <div class="-ml-5 sm:ml-0"><DownloadIcon/></div>
+          
         </div>
       </div>
 
@@ -82,8 +83,8 @@ export default {
 }
 
 hr {
-  /* color: #e4e4e4; */
-  color: black;
+  color: #e4e4e4;
+  /* color: black; */
   max-width: 600px;
 }
 
@@ -92,29 +93,8 @@ hr {
 }
 
 .rightInvoice {
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
-
-@media (max-width: 640px) {
-  .mainPanel {
-    position: relative;
-    margin-top: 54px;
-    left: 1%;
-  }
-}
-
-@media (max-width: 768px) {
-  .mainPanel {
-    position: relative;
-    margin-top: 54px;
-    left: 5%;
-  }
-  
-  .rightInvoice{
-    margin-left: -1px;
-  }
-  
-  }
 
   
 </style>

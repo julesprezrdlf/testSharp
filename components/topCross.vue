@@ -1,5 +1,5 @@
 <template>
-  <div class="containerCruz">
+  <div class="containerCruz ">
     <crossIcon/>
   </div>
 </template>
@@ -14,5 +14,6 @@ export default {
 .containerCruz{
 
 cursor: pointer;
+
 }
 </style>

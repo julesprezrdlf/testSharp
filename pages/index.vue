@@ -4,10 +4,22 @@
 <template>
   <div class ="container">
 <div class ="leftSide">
-<!-- <Sidebar/> -->
+<Sidebar/>
 </div>
-<div class ="rightSide grid place-items-center">
-<Panel/>
+
+<div class ="rightSide grid grid-cols-8">
+  <div class="panelContainer 
+   xl:col-start-4 xl:col-span-7
+   lg:col-start-4 lg:col-span-7
+   md:col-start-4 md:col-span-7
+   sm:col-start-2 sm:col-span-7
+   col-start-1
+    col-span-7
+   ">
+
+    <Panel/>
+  </div>
+
 
 </div>
   </div>

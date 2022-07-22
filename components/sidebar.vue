@@ -82,15 +82,7 @@ export default {
     background: #333333;
     
 }
-h1{
-    /* color: white; */
-}
-/* Smartphones (portrait) ----------- */
-/* @media only screen and (max-width: 620px) {
-  .sidebarArea {
-    display: none;
-  }
-} */
+
 
 @media (max-width: 768px) { 
    .sidebarArea {

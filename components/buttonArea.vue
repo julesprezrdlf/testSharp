@@ -1,6 +1,6 @@
 <template>
   <div class="container ">
-    <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-7 rounded inline-flex items-center boton1">
   <svg
           width="24"
           height="24"
@@ -18,7 +18,7 @@
   <span class="ml-2">Save</span>
 </button>
    
-<button class="bg-transparent  hover:bg-indigo-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-indigo-500 hover:border-transparent rounded boton2">
+<button class="bg-transparent  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded boton2">
   
   <span>Cancel</span>
 </button>
@@ -32,10 +32,20 @@ export default {};
 
 <style>
 
+
+.boton1{
+  height: 40px;
+  width: 117px;
+}
+
 .boton2{
   margin-top: 40px;
-  transform: translateY(-5.5px);
+  transform: translateY(-5px);
   margin-left: 20px;
+  height: 40px;
+  width: 117px;
   
 }
+
+
 </style>
